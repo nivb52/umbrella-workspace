@@ -1,0 +1,22 @@
+{
+  "name": "@my-org/web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "preact": "10.27.2",
+    "@my-org/shared-greet": "file:../../../shared/packages/greet",
+    "@my-org/consts": "workspace:*"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "2.10.2",
+    "typescript": "5.8.3",
+    "vite": "7.1.6"
+  }
+}

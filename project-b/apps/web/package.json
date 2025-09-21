@@ -1,0 +1,22 @@
+{
+  "name": "@project_b/web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:force": "vite --force",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "solid-js": "1.9.9",
+    "@my-org/shared-greet": "file:../../../shared/packages/greet",
+    "@my-org/shared-count": "file:../../../shared/packages/count"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3",
+    "vite": "7.1.6",
+    "vite-plugin-solid": "2.11.8"
+  }
+}

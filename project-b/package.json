@@ -1,0 +1,19 @@
+{
+  "name": "@project_b/root",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev:web": "pnpm run --filter web dev",
+    "dev:web:force": "pnpm run --filter web dev:force",
+    "dev:api": "pnpm run --filter api dev",
+    "dev": "pnpm run -r --parallel --aggregate-output dev",
+    "build": "pnpm run -r build",
+    "test": "pnpm run -r --parallel test",
+    "lint": "pnpm run -r --parallel lint",
+    "deploy": "pnpm build && pnpm run -r deploy",
+    "clean:node_modules": "pnpm -r exec rm -rf node_modules",
+    "clean:shared": "pnpm -r exec rm -rf ./apps/web/node_modules/@my-org",
+    "clean:vite": "rm -rf node_modules/.vite",
+    "preinstall": "pnpm run clean:shared"
+  }
+}

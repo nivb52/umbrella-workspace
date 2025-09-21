@@ -1,0 +1,20 @@
+{
+  "name": "@my-org/desktop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "packageManager": "pnpm@10.15.1",
+  "dependencies": {
+    "@my-org/shared-greet": "file:../../../shared/packages/greet",
+    "@my-org/consts": "workspace:*",
+    "@my-org/style": "workspace:*"
+  }
+}

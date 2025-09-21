@@ -1,0 +1,14 @@
+{
+    "name": "@my-org/project-a",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+        "dev:web": "pnpm run --filter web dev",
+        "dev:desktop": "pnpm run --filter desktop dev",
+        "dev": "pnpm run -r --parallel --aggregate-output dev",
+        "build": "pnpm run -r build",
+        "test": "pnpm run -r --parallel test",
+        "lint": "pnpm run -r --parallel lint",
+        "deploy": "pnpm build && pnpm run -r deploy"
+    }
+}
